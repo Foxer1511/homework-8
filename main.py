@@ -8,7 +8,7 @@ import re
 # print(li)
 # print()
 # for val in li:
-#     if re.match(r'\+?\d{12}', val) and 12 <= len(val) <= 13:
+#     if re.match(r'\+?[380]\d{9}', val) and 12 <= len(val) <= 13:
 #         print(val, 'correct')
 #     else:
 #         print(val, 'incorrect')
@@ -42,12 +42,14 @@ import re
 
 #- ПІБ клієнта (3 слова, мінімальна довжина 2 символи, максимальна довжина 20)
 
-# li = ["Гриб Олег Андрійович", "ЙЙЙЙййцйцуйцуйцу", "РРООЙ ооолі", "ф і в", "фівфівфівфівфвіфвфів фів фів"]
+# li = ["Гриб Олег Андрійович", "ЙЙЙЙййцйцуйцуйцу", "РРООЙ ооолі", "ф і в", "фівфівфівфівфвіфвфів фів фів",
+#       "Azamat Zaur Nazif"]
 # print("ПІБ")
 # print(li)
 # print()
 # for val in li:
-#     if re.match(r'\w{2,10}\s\w{2,10}\s\w{2,10}', val) and 2 < len(val) <= 20:
+#     if (re.match(r'[А-Яа-яЄєA-Za-z]{2,10}\s[А-Яа-яЄєA-Za-z]{2,10}\s[А-Яа-яЄєA-Za-z]{2,10}', val)
+#             and 2 < len(val) <= 20):
 #         print(val, "correct")
 #     else:
 #         print(val, "incorrect")
