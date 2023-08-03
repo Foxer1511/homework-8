@@ -29,25 +29,25 @@ import re
 
 #- email (наявність @, домену: gmail.com наприклад, мінімальна довжина та максимальна на ваш вибір)
 
-# li = ['qweerewrtq@gmail.com', '123123r3werfwefa', 'sdfasgsgsgas@gailcom', "sfa234543sfda@gmail.com",
+# li = ['qwe---wrtq@gmail.com', '123123r3werfwefa', 'sdfasgsgsgas@gailcom', "sfa234543sfda@gmail.com",
 #       "qwerwqer@ukr.net", "@gmail.com", "adahsdfukvasfgsadgfoasdgfaoisghdfiasgdgasf@gmail.com", "132@gmail.com"]
 # print("Email list")
 # print(li)
 # print()
 # for val in li:
-#     if re.match(r'\w+@gmail.com', val) and 15 < len(val) < 25:
+#     if re.match(r'\w+[-_]*\w+@[a-zA-Z]{2,7}[.][a-zA-Z]{2,5}', val) and 15 < len(val) < 25:
 #         print(val, "correct")
 #     else:
 #         print(val, "incorrect")
 
 #- ПІБ клієнта (3 слова, мінімальна довжина 2 символи, максимальна довжина 20)
 
-# li = ["Гриб Олег Андрійович", "ЙЙЙЙййцйцуйцуйцу", "РРООЙ ооолі"]
+# li = ["Гриб Олег Андрійович", "ЙЙЙЙййцйцуйцуйцу", "РРООЙ ооолі", "ф і в", "фівфівфівфівфвіфвфів фів фів"]
 # print("ПІБ")
 # print(li)
 # print()
 # for val in li:
-#     if re.match(r'\w+\s\w+\s\w+', val) and 2 < len(val) <= 20:
+#     if re.match(r'\w{2,10}\s\w{2,10}\s\w{2,10}', val) and 2 < len(val) <= 20:
 #         print(val, "correct")
 #     else:
 #         print(val, "incorrect")
